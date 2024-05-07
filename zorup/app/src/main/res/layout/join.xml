@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/laundrybold"
+        android:text="회원가입"
+        android:textSize="20pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/textboxstyle"
+            android:ems="10"
+            android:fontFamily="@font/laundryregular"
+            android:gravity="center"
+            android:hint="이름을 입력하세요"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/textboxstyle"
+            android:ems="10"
+            android:fontFamily="@font/laundryregular"
+            android:gravity="center"
+            android:hint="전화번호를 입력하세요"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/certificationNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:background="@drawable/textboxstyle"
+                android:fontFamily="@font/laundryregular"
+                android:gravity="center"
+                android:hint="인증번호 입력"
+                android:layout_weight="1"
+                android:ems="6"
+                android:textSize="10pt" />
+
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/textboxstyle"
+                android:fontFamily="@font/laundryregular"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:text="확인" />
+
+            <Button
+                android:id="@+id/timeExtendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@drawable/textboxstyle"
+                android:fontFamily="@font/laundryregular"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:text="시간\n연장" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="100dp"
+            android:fontFamily="@font/laundryregular"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:text="회원 탈퇴하기" />
+    </LinearLayout>
+
+</LinearLayout>
